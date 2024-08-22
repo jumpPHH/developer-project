@@ -1,0 +1,31 @@
+### GET request to example server
+POST http://localhost:8080/developers/create
+Content-type: application/json
+
+{
+  "developerLevel": "JUNIOR",
+  "developerSkillType": "BACK_END",
+  "experienceYears": 2,
+  "memberId": "member01",
+  "name": "organ",
+  "age":20
+}
+
+###
+GET http://localhost:8080/developers
+
+###
+GET http://localhost:8080/developers/member01
+
+###
+PUT http://localhost:8080/developers/member01
+Content-type: application/json
+
+{
+  "developerLevel": "SENIOR",
+  "developerSkillType": "FULL_STACK",
+  "experienceYears": 13
+}
+
+###
+DELETE http://localhost:8080/developers/member01
